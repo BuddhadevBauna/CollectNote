@@ -1,2 +1,2 @@
 # CollectNote
-Collect user note and show it
+Collect user note and show it and delete it

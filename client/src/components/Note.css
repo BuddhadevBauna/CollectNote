@@ -1,0 +1,32 @@
+.note {
+    position: relative;
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.3125rem #ccc;
+    padding: 0.8rem;
+}
+.note h1 {
+    font-family: 'Crimson Text', serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 0.4rem;
+}
+.note p {
+    text-align: justify;
+    font-size: 0.875rem;
+    margin-bottom: 2.5rem;
+}
+.note button {
+    position: absolute;
+    font-size: 1.2rem;
+    right: 1rem;
+    bottom: 0.5rem;
+    color: #f5ba13;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+}
+.expand-link {
+    text-decoration: none;
+}

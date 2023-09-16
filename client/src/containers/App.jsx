@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './App.css';
+import "./App.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Form from "./Form";
@@ -33,19 +33,23 @@ function App() {
   return (
     <div>
       <Header />
-      <Form onAdd={addNote} />
-      <div className="note-container">
-        {notes.map((noteItem) => {
-          return (
-            <Note
-              key={noteItem._id}
-              id={noteItem._id}
-              title={noteItem.noteTitle}
-              content={noteItem.noteContent}
-              onDelete={deleteNote}
-            />
-          );
-        })}
+      <div className="body-container">
+        <small>Please enter title with atleast 15 characters.</small>
+        <small>Please enter content with atleast 50 characters.</small>
+        <Form onAdd={addNote} />
+        <div className="note-container">
+          {notes.map((noteItem) => {
+            return (
+              <Note
+                key={noteItem._id}
+                id={noteItem._id}
+                title={noteItem.noteTitle}
+                content={noteItem.noteContent}
+                onDelete={deleteNote}
+              />
+            );
+          })}
+        </div>
       </div>
       <Footer />
     </div>

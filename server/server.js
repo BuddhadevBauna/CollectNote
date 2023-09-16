@@ -1,3 +1,5 @@
+import dotenv from "dotenv";
+dotenv.config();
 import express from "express";
 import cors from "cors";
 import bodyParser from "body-parser";
@@ -5,7 +7,7 @@ import mongoose from "mongoose";
 import router from "./routes/note_routes.js";
 
 //Database connection
-mongoose.connect('mongodb://127.0.0.1:27017/noteDB');
+mongoose.connect(process.env.MONGO_URI);
 
 //initialize node server
 const server = express();
